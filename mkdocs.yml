@@ -1,8 +1,8 @@
 site_name: AI Architecture
-site_url: https://architecture.inference.institute
+site_url: https://inference-institute.github.io/ai-architecture/ #https://architecture.inference.institute
 copyright: AI Architecture | Infernce Institute
-repo_name: inference-institute/AI-Architecture
-repo_url: https://github.com/inference-institute/AI-Architecture
+repo_name: inference-institute/ai-architecture
+repo_url: https://github.com/inference-institute/ai-architecture
 
 theme:
   name: material
