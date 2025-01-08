@@ -51,7 +51,7 @@ markdown_extensions:
 plugins:
   - offline
   - social
-  - git-authors
+  # - git-authors
   - search
   - tags
   - inline-select-svg
