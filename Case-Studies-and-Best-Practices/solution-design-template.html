@@ -1,0 +1,3689 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Use this template as a strategic blueprint for designing AI solutions within an enterprise setting. Each section includes guidance and placeholders to help you align your AI initiatives with business goals, comply with global/regional regulations (e.g., EU AI Act, GDPR, HIPAA, CCPA), and maintain an auditable, transparent record of all changes.">
+      
+      
+        <meta name="author" content="Inference Institute">
+      
+      
+        <link rel="canonical" href="https://architecture.inference.institute/Case-Studies-and-Best-Practices/solution-design-template.html">
+      
+      
+        <link rel="prev" href="../9.-AI-Governance-and-Security/05-Auditing-and-Monitoring-AI-Systems.html">
+      
+      
+        <link rel="next" href="../Learning-Materials/TOGAF/index.html">
+      
+      
+      <link rel="icon" href="../static/logo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
+    
+    
+      
+        <title>AI Enterprise Solution Design & Compliance Template - AI Architecture</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6f8fc17f.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+        <script src="https://unpkg.com/iframe-worker/shim"></script>
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-JF4QZPDSXY"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-JF4QZPDSXY",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-JF4QZPDSXY",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="AI Enterprise Solution Design & Compliance Template - AI Architecture" >
+      
+        <meta  property="og:description"  content="Use this template as a strategic blueprint for designing AI solutions within an enterprise setting. Each section includes guidance and placeholders to help you align your AI initiatives with business goals, comply with global/regional regulations (e.g., EU AI Act, GDPR, HIPAA, CCPA), and maintain an auditable, transparent record of all changes." >
+      
+        <meta  property="og:image"  content="https://architecture.inference.institute/assets/images/social/Case-Studies-and-Best-Practices/solution-design-template.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://architecture.inference.institute/Case-Studies-and-Best-Practices/solution-design-template.html" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="AI Enterprise Solution Design & Compliance Template - AI Architecture" >
+      
+        <meta  name="twitter:description"  content="Use this template as a strategic blueprint for designing AI solutions within an enterprise setting. Each section includes guidance and placeholders to help you align your AI initiatives with business goals, comply with global/regional regulations (e.g., EU AI Act, GDPR, HIPAA, CCPA), and maintain an auditable, transparent record of all changes." >
+      
+        <meta  name="twitter:image"  content="https://architecture.inference.institute/assets/images/social/Case-Studies-and-Best-Practices/solution-design-template.png" >
+      
+    
+    
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ai-enterprise-solution-design-compliance-template" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../index.html" title="AI Architecture" class="md-header__button md-logo" aria-label="AI Architecture" data-md-component="logo">
+      
+  <img src="../static/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AI Architecture
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              AI Enterprise Solution Design & Compliance Template
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/inference-institute/ai-architecture" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    inference-institute/ai-architecture
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../index.html" title="AI Architecture" class="md-nav__button md-logo" aria-label="AI Architecture" data-md-component="logo">
+      
+  <img src="../static/logo.png" alt="logo">
+
+    </a>
+    AI Architecture
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/inference-institute/ai-architecture" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    inference-institute/ai-architecture
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AI Architecture
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../1.-AI-Fundamentals/index.html" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    1. AI Fundamentals
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            1. AI Fundamentals
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1.-AI-Fundamentals/01-Machine-Learning-Basics.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Machine Learning Basics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1.-AI-Fundamentals/02-Deep-Learning-and-Neural-Networks.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Deep Learning and Neural Networks
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1.-AI-Fundamentals/03-Natural-Language-Processing.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Natural Language Processing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1.-AI-Fundamentals/04-Computer-Vision.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Computer Vision
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1.-AI-Fundamentals/05-Reinforcement-Learning.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reinforcement Learning
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../2.-AI-Solution-Design/index.html" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    2. AI Solution Design
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            2. AI Solution Design
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2.-AI-Solution-Design/01-Problem-Framing-and-Requirements-Analysis.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Problem Framing and Requirements Analysis
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2.-AI-Solution-Design/02-AI-Architecture-Patterns.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AI Architecture Patterns
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2.-AI-Solution-Design/03-Scalability-and-Performance-Considerations.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Scalability and Performance Considerations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2.-AI-Solution-Design/04-Cost-Optimization-Strategies.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cost Optimization Strategies
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2.-AI-Solution-Design/05-AI-Solution-Evaluation-Metrics.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AI Solution Evaluation Metrics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2.-AI-Solution-Design/06-Deployment-Strategies-for-AI-Solutions.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Deployment Strategies for AI Solutions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../3.-Data-Architecture-for-AI/index.html" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    3. Data Architecture for AI
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            3. Data Architecture for AI
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.-Data-Architecture-for-AI/01-Data-Storage-and-Management-Systems.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data Storage and Management Systems
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.-Data-Architecture-for-AI/02-Data-Pipelines-and-ETL-Processes.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data Pipelines and ETL Processes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.-Data-Architecture-for-AI/03-Data-Quality-and-Preprocessing.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data Quality and Preprocessing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.-Data-Architecture-for-AI/04-Feature-Engineering.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Feature Engineering
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.-Data-Architecture-for-AI/05-Data-Versioning-and-Lineage.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data Versioning and Lineage
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../4.-AI-Model-Lifecycle-Management/index.html" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    4. AI Model Lifecycle Management
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            4. AI Model Lifecycle Management
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4.-AI-Model-Lifecycle-Management/01-Model-Development-Workflows.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Model Development Workflows
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4.-AI-Model-Lifecycle-Management/02-Model-Training-and-Validation.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Model Training and Validation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4.-AI-Model-Lifecycle-Management/03-Hyperparameter-Tuning.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hyperparameter Tuning
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4.-AI-Model-Lifecycle-Management/04-Model-Versioning-and-Experiment-Tracking.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Model Versioning and Experiment Tracking
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4.-AI-Model-Lifecycle-Management/05-Model-Deployment-and-Serving.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Model Deployment and Serving
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../5.-AI-Integration-and-Deployment/index.html" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    5. AI Integration and Deployment
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            5. AI Integration and Deployment
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../5.-AI-Integration-and-Deployment/01-API-Design-for-AI-Services.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    API Design for AI Services
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../5.-AI-Integration-and-Deployment/02-Microservices-Architecture-for-AI.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Microservices Architecture for AI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../5.-AI-Integration-and-Deployment/03-Containerization-and-Orchestration.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Containerization and Orchestration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../5.-AI-Integration-and-Deployment/04-CI%5CCD-for-AI-Systems.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CI/CD for AI Systems
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../5.-AI-Integration-and-Deployment/05-Monitoring-and-Logging.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Monitoring and Logging for AI Systems
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../6.-Ethical-AI-Design/index.html" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    6. Ethical AI Design
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7" id="__nav_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            6. Ethical AI Design
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../6.-Ethical-AI-Design/01-Fairness-and-Bias-in-AI.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fairness and Bias in AI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../6.-Ethical-AI-Design/02-Transparency-and-Explainability.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Transparency and Explainability in AI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../6.-Ethical-AI-Design/03-Privacy-Preserving-AI-Techniques.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Privacy Preserving AI Techniques
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../6.-Ethical-AI-Design/04-AI-Safety-and-Robustness.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AI Safety and Robustness
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../6.-Ethical-AI-Design/05-Ethical-Guidelines-and-Frameworks.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ethical Guidelines and Frameworks for AI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../7.-Enterprise-Architecture-Frameworks/index.html" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    7. Enterprise Architecture Frameworks
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_8" id="__nav_8_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            7. Enterprise Architecture Frameworks
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../7.-Enterprise-Architecture-Frameworks/01-The-Open-Group-Architecture-Framework.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The Open Group Architecture Framework (TOGAF)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../7.-Enterprise-Architecture-Frameworks/02-TOGAF-Application-to-AI.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TOGAF Application to AI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../7.-Enterprise-Architecture-Frameworks/03-Zachman-Framework-for-AI-Architecture.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Zachman Framework for AI Architecture
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../7.-Enterprise-Architecture-Frameworks/04-ITIL-for-AI-Service-Management.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ITIL for AI Service Management
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../7.-Enterprise-Architecture-Frameworks/05-COBIT-for-AI-Governance.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    COBIT for AI Governance
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../8.-Cloud-Platforms-for-AI/index.html" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    8. Cloud Platforms for AI
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_9" id="__nav_9_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            8. Cloud Platforms for AI
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../8.-Cloud-Platforms-for-AI/01-AWS-AI-Services-and-Architecture.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AWS AI Services and Architecture
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../8.-Cloud-Platforms-for-AI/02-Azure-AI-Platform.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Azure AI Platform
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../8.-Cloud-Platforms-for-AI/03-Google-Cloud-AI-Solutions.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Google Cloud AI Solutions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../8.-Cloud-Platforms-for-AI/04-IBM-Watson-on-Cloud.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    IBM Watson on Cloud
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../8.-Cloud-Platforms-for-AI/05-Multi-cloud-AI-Strategies.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Multi-Cloud AI Strategies
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../9.-AI-Governance-and-Security/index.html" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    9. AI Governance and Security
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_10" id="__nav_10_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            9. AI Governance and Security
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../9.-AI-Governance-and-Security/01-AI-Risk-Assessment-and-Management.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AI Risk Assessment and Management
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../9.-AI-Governance-and-Security/02-Data-Protection-and-Privacy-in-AI-Systems.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data Protection and Privacy in AI Systems
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../9.-AI-Governance-and-Security/03-Model-Governance-and-Compliance.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Model Governance and Compliance
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../9.-AI-Governance-and-Security/04-Securing-AI-Pipelines-and-Infrastructures.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Securing AI Pipelines and Infrastructures
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../9.-AI-Governance-and-Security/05-Auditing-and-Monitoring-AI-Systems.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Auditing and Monitoring AI Systems
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Case Studies and Best Practices
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            Case Studies and Best Practices
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    AI Enterprise Solution Design & Compliance Template
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="solution-design-template.html" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    AI Enterprise Solution Design & Compliance Template
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-executive-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Executive Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-business-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Business Architecture
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Business Architecture">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-business-goals-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 Business Goals &amp; Metrics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-stakeholders-roles-raci-matrix" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2 Stakeholders &amp; Roles (RACI Matrix)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-compliance-regulatory-context" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3 Compliance &amp; Regulatory Context
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-data-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Data Architecture
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Data Architecture">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-data-inventory-residency" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 Data Inventory &amp; Residency
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-governance-data-lineage" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 Governance &amp; Data Lineage
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-data-flow-diagram" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.3 Data Flow Diagram
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-application-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Application Architecture
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Application Architecture">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-components-interfaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1 Components &amp; Interfaces
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-mlops-lifecycle-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2 MLOps &amp; Lifecycle Management
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-interaction-diagram" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.3 Interaction Diagram
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-technology-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Technology Architecture
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Technology Architecture">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-infrastructure-cloud-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1 Infrastructure &amp; Cloud Services
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-security-networking" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2 Security &amp; Networking
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-implementation-phasing" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Implementation &amp; Phasing
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Implementation & Phasing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-phases-milestones" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1 Phases &amp; Milestones
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-migration-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.2 Migration Strategy
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-risk-management-model-governance" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Risk Management &amp; Model Governance
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Risk Management & Model Governance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-risk-mitigation" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.1 Risk &amp; Mitigation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-ethical-explainable-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.2 Ethical &amp; Explainable AI
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-regulatory-audit-framework-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Regulatory &amp; Audit Framework Alignment
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Regulatory & Audit Framework Alignment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81-framework-mapping-control-matrix" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.1 Framework Mapping &amp; Control Matrix
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-compliance-change-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.2 Compliance Change Management
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83-audit-readiness-evidence-repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.3 Audit Readiness &amp; Evidence Repository
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-methodologies-best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Methodologies &amp; Best Practices
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-appendices" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. Appendices
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10. Appendices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#101-glossary" class="md-nav__link">
+    <span class="md-ellipsis">
+      10.1 Glossary
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#102-references-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      10.2 References &amp; Resources
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-revision-history" class="md-nav__link">
+    <span class="md-ellipsis">
+      11. Revision History
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Learning Materials
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12">
+            <span class="md-nav__icon md-icon"></span>
+            Learning Materials
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12_1" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../Learning-Materials/TOGAF/index.html" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    TOGAF
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_12_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12_1">
+            <span class="md-nav__icon md-icon"></span>
+            TOGAF
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-executive-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Executive Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-business-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Business Architecture
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Business Architecture">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-business-goals-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 Business Goals &amp; Metrics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-stakeholders-roles-raci-matrix" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2 Stakeholders &amp; Roles (RACI Matrix)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-compliance-regulatory-context" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3 Compliance &amp; Regulatory Context
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-data-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Data Architecture
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Data Architecture">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-data-inventory-residency" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 Data Inventory &amp; Residency
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-governance-data-lineage" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 Governance &amp; Data Lineage
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-data-flow-diagram" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.3 Data Flow Diagram
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-application-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Application Architecture
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Application Architecture">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-components-interfaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1 Components &amp; Interfaces
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-mlops-lifecycle-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2 MLOps &amp; Lifecycle Management
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-interaction-diagram" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.3 Interaction Diagram
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-technology-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Technology Architecture
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Technology Architecture">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-infrastructure-cloud-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1 Infrastructure &amp; Cloud Services
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-security-networking" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2 Security &amp; Networking
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-implementation-phasing" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Implementation &amp; Phasing
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Implementation & Phasing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-phases-milestones" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1 Phases &amp; Milestones
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-migration-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.2 Migration Strategy
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-risk-management-model-governance" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Risk Management &amp; Model Governance
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Risk Management & Model Governance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-risk-mitigation" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.1 Risk &amp; Mitigation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-ethical-explainable-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.2 Ethical &amp; Explainable AI
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-regulatory-audit-framework-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Regulatory &amp; Audit Framework Alignment
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Regulatory & Audit Framework Alignment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81-framework-mapping-control-matrix" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.1 Framework Mapping &amp; Control Matrix
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-compliance-change-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.2 Compliance Change Management
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83-audit-readiness-evidence-repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.3 Audit Readiness &amp; Evidence Repository
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-methodologies-best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Methodologies &amp; Best Practices
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-appendices" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. Appendices
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10. Appendices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#101-glossary" class="md-nav__link">
+    <span class="md-ellipsis">
+      10.1 Glossary
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#102-references-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      10.2 References &amp; Resources
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-revision-history" class="md-nav__link">
+    <span class="md-ellipsis">
+      11. Revision History
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="ai-enterprise-solution-design-compliance-template">AI Enterprise Solution Design &amp; Compliance Template</h1>
+<p><strong>Instructions:</strong><br />
+<em>Use this template as a strategic blueprint for designing AI solutions within an enterprise setting. Each section includes guidance and placeholders to help you align your AI initiatives with business goals, comply with global/regional regulations (e.g., EU AI Act, GDPR, HIPAA, CCPA), and maintain an auditable, transparent record of all changes. The template is intended to be a living document that evolves as regulations, technologies, and business priorities change.</em></p>
+<hr />
+<h2 id="1-executive-summary">1. Executive Summary</h2>
+<p><strong>Purpose:</strong> Offer a high-level overview of the AI initiative, its business rationale, and core objectives, ensuring alignment with corporate strategy and regulatory environments.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Item</strong></th>
+<th><strong>Details</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Project Name</td>
+<td><em>e.g., Customer Churn Prediction System</em></td>
+</tr>
+<tr>
+<td>Executive Sponsor</td>
+<td><em>Name/Title (e.g., Chief Data Officer)</em></td>
+</tr>
+<tr>
+<td>Business Context</td>
+<td><em>Describe the market challenge/opportunity (e.g., high churn in EU markets).</em></td>
+</tr>
+<tr>
+<td>Objectives</td>
+<td><em>List specific targets (e.g., reduce churn by 15% in EU, improve NPS globally).</em></td>
+</tr>
+<tr>
+<td>Geographical Scope</td>
+<td><em>Enumerate regions served (e.g., EU, US, APAC) and applicable laws.</em></td>
+</tr>
+</tbody>
+</table>
+<p><em>Guidance:</em> This section sets the stage. Revisit it regularly if business goals or regulatory conditions (e.g., expansion into a new region) change.</p>
+<hr />
+<h2 id="2-business-architecture">2. Business Architecture</h2>
+<p><strong>Purpose:</strong> Ensure the AI solution is aligned with corporate strategy, clearly defining roles, responsibilities, and how compliance and governance fit into business objectives.</p>
+<h3 id="21-business-goals-metrics">2.1 Business Goals &amp; Metrics</h3>
+<table>
+<thead>
+<tr>
+<th><strong>Goal</strong></th>
+<th><strong>Description</strong></th>
+<th><strong>KPI/Metric</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Goal 1</em></td>
+<td><em>Reduce EU churn by 15% within 12 months.</em></td>
+<td><em>Churn Rate, Retention %</em></td>
+</tr>
+<tr>
+<td><em>Goal 2</em></td>
+<td><em>Improve NPS by 10 points in US region.</em></td>
+<td><em>NPS (by region), CSAT</em></td>
+</tr>
+</tbody>
+</table>
+<p><em>Guidance:</em> Tie goals to quantifiable metrics. Update as business priorities shift or new regulations alter success criteria.</p>
+<h3 id="22-stakeholders-roles-raci-matrix">2.2 Stakeholders &amp; Roles (RACI Matrix)</h3>
+<table>
+<thead>
+<tr>
+<th><strong>Role</strong></th>
+<th><strong>Name/Team</strong></th>
+<th><strong>R/A/C/I</strong></th>
+<th><strong>Responsibilities</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Executive Sponsor</td>
+<td>[Name]</td>
+<td>A</td>
+<td>Approve strategy, budget, ensure compliance</td>
+</tr>
+<tr>
+<td>AI Architect</td>
+<td>[Name]</td>
+<td>R</td>
+<td>Oversee end-to-end AI design &amp; integration</td>
+</tr>
+<tr>
+<td>Data Scientist</td>
+<td>[Team]</td>
+<td>R</td>
+<td>Model dev, validation, bias/fairness checks</td>
+</tr>
+<tr>
+<td>MLOps Engineer</td>
+<td>[Team]</td>
+<td>R</td>
+<td>CI/CD, logging changes, versioning models</td>
+</tr>
+<tr>
+<td>Data Engineer</td>
+<td>[Team]</td>
+<td>R</td>
+<td>Ingest/process data, ensure data lineage</td>
+</tr>
+<tr>
+<td>Responsible AI Officer</td>
+<td>[Team]</td>
+<td>C</td>
+<td>Oversee ethical standards, EU AI Act readiness</td>
+</tr>
+<tr>
+<td>Legal &amp; Compliance Team</td>
+<td>[Team]</td>
+<td>C</td>
+<td>Interpret laws (EU AI Act, GDPR, etc.)</td>
+</tr>
+<tr>
+<td>IT Manager</td>
+<td>[Team]</td>
+<td>I</td>
+<td>Infrastructure &amp; security alignment</td>
+</tr>
+<tr>
+<td>End Users (Ops/CRM)</td>
+<td>[Dept]</td>
+<td>I</td>
+<td>Consume results, give feedback</td>
+</tr>
+</tbody>
+</table>
+<p><em>Guidance:</em> If regulations change, update the RACI matrix to add new roles or responsibilities (e.g., Data Protection Officer).</p>
+<h3 id="23-compliance-regulatory-context">2.3 Compliance &amp; Regulatory Context</h3>
+<table>
+<thead>
+<tr>
+<th><strong>Regulation/Act</strong></th>
+<th><strong>Applicability</strong></th>
+<th><strong>Key Requirements</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>EU AI Act</td>
+<td>EU Operations</td>
+<td>Risk classification, transparency, human oversight</td>
+</tr>
+<tr>
+<td>GDPR</td>
+<td>EU Personal Data</td>
+<td>Consent, data minimization, DSAR compliance</td>
+</tr>
+<tr>
+<td>HIPAA (US)</td>
+<td>Health Data in US</td>
+<td>Data privacy, strict access controls, audit logs</td>
+</tr>
+<tr>
+<td>CCPA (California)</td>
+<td>Personal Data in California</td>
+<td>Opt-outs, data disclosure requests</td>
+</tr>
+</tbody>
+</table>
+<p><em>Guidance:</em> Continuously update this table as your business expands into new regions or new laws (e.g., Brazil’s LGPD) become relevant.</p>
+<hr />
+<h2 id="3-data-architecture">3. Data Architecture</h2>
+<p><strong>Purpose:</strong> Define data sources, governance, and residency with an emphasis on traceability and compliance. Ensure the architecture supports audits (e.g., who accessed data, where it’s stored).</p>
+<h3 id="31-data-inventory-residency">3.1 Data Inventory &amp; Residency</h3>
+<table>
+<thead>
+<tr>
+<th><strong>Data Source</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Region</strong></th>
+<th><strong>Owner</strong></th>
+<th><strong>Quality Checks</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CRM System (EU)</td>
+<td>Customer Profiles</td>
+<td>Frankfurt (EU)</td>
+<td>CRM Team</td>
+<td>Null checks, duplicates</td>
+</tr>
+<tr>
+<td>Trans. DB (US)</td>
+<td>Purchase History</td>
+<td>Virginia (US)</td>
+<td>E-Comm Team</td>
+<td>Schema validation, outliers</td>
+</tr>
+<tr>
+<td>External APIs</td>
+<td>Demographics</td>
+<td>Global</td>
+<td>Vendor</td>
+<td>Reliability, freshness</td>
+</tr>
+</tbody>
+</table>
+<p><em>Guidance:</em> Document data lineage and verify that regional data processing complies with local laws (e.g., EU data stored in EU data centers).</p>
+<h3 id="32-governance-data-lineage">3.2 Governance &amp; Data Lineage</h3>
+<table>
+<thead>
+<tr>
+<th><strong>Policy</strong></th>
+<th><strong>Description</strong></th>
+<th><strong>Tools/Frameworks</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Data Stewardship</td>
+<td>Assign data stewards per domain/region</td>
+<td>Data Catalog (Collibra)</td>
+</tr>
+<tr>
+<td>Lineage Tracking</td>
+<td>Track transformations, downstream usage</td>
+<td>Apache Atlas, OpenLineage</td>
+</tr>
+<tr>
+<td>Retention &amp; Purging</td>
+<td>Retain/purge per legal requirements</td>
+<td>Automated scripts, region-based policies</td>
+</tr>
+</tbody>
+</table>
+<p><em>Guidance:</em> Maintaining robust lineage helps demonstrate compliance to auditors and supports future changes (e.g., if laws mandate data deletion).</p>
+<h3 id="33-data-flow-diagram">3.3 Data Flow Diagram</h3>
+<pre class="mermaid"><code>graph TD
+    A["CRM Data (EU)"] --&gt;|"ETL (EU)"| B[EU Data Lake]
+    B --&gt; C["Feature Engineering (EU)"]
+    C --&gt; D["Model Training (EU)"]
+    D --&gt; E["Model Serving (EU)"]
+    E --&gt; F["CRM UI (EU Users)"]
+
+    subgraph US
+    G["Transformations DB (US)"] --&gt;|"ETL (US)"| H[US Data Lake]
+    H --&gt; C
+    end</code></pre>
+<p><em>Guidance:</em> Show how data never leaves certain regions if that’s required by local laws (e.g., GDPR data stays in the EU).</p>
+<hr />
+<h2 id="4-application-architecture">4. Application Architecture</h2>
+<p><strong>Purpose:</strong> Detail all system components and interactions, including model development, integration points, and how compliance/ethics checks are embedded into workflows.</p>
+<h3 id="41-components-interfaces">4.1 Components &amp; Interfaces</h3>
+<table>
+<thead>
+<tr>
+<th><strong>Component</strong></th>
+<th><strong>Description</strong></th>
+<th><strong>Interface/Protocol</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Data Ingestion Service</td>
+<td>Ingest &amp; normalize data by region</td>
+<td>Batch/Streaming (Kafka, APIs)</td>
+</tr>
+<tr>
+<td>Model Training Pipeline</td>
+<td>Train models, log experiments/versions</td>
+<td>Python SDK, MLflow</td>
+</tr>
+<tr>
+<td>Model Serving API</td>
+<td>Real-time prediction endpoint</td>
+<td>REST/GRPC</td>
+</tr>
+<tr>
+<td>Integration Layer (CRM)</td>
+<td>Deliver predictions to CRM system</td>
+<td>RESTful Endpoints, Webhooks</td>
+</tr>
+<tr>
+<td>Monitoring &amp; Dashboards</td>
+<td>Observe performance, compliance metrics</td>
+<td>Web UI (HTTPS)</td>
+</tr>
+</tbody>
+</table>
+<p><em>Guidance:</em> For each component, describe how logs are captured and stored for auditing (e.g., model outputs, data used, changes made).</p>
+<h3 id="42-mlops-lifecycle-management">4.2 MLOps &amp; Lifecycle Management</h3>
+<table>
+<thead>
+<tr>
+<th><strong>Process</strong></th>
+<th><strong>Description</strong></th>
+<th><strong>Tooling</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Model Versioning</td>
+<td>Track models, data &amp; code versions</td>
+<td>MLflow, DVC, Git</td>
+</tr>
+<tr>
+<td>Automated Testing</td>
+<td>Check data quality, bias &amp; fairness</td>
+<td>Great Expectations, Fairlearn</td>
+</tr>
+<tr>
+<td>CI/CD &amp; Deployment</td>
+<td>Continuous integration &amp; regional deployment</td>
+<td>Jenkins, GitHub Actions</td>
+</tr>
+<tr>
+<td>Compliance Logging</td>
+<td>Record all changes, training data, performance</td>
+<td>ELK Stack, Cloud Logging</td>
+</tr>
+</tbody>
+</table>
+<p><em>Guidance:</em> Ensure MLOps pipelines integrate compliance checks at each step (e.g., block deployment if a bias threshold is exceeded).</p>
+<h3 id="43-interaction-diagram">4.3 Interaction Diagram</h3>
+<pre class="mermaid"><code>graph LR
+    CRM["CRM System (EU)"] --&gt;|API| ModelAPI["Model Serving (EU)"]
+    ModelAPI --&gt; Dashboard[Monitoring/Compliance Dashboard]
+    Dashboard --&gt; LegalTeam[Compliance Review]</code></pre>
+<p><em>Guidance:</em> Show where compliance teams can access logs and reports.</p>
+<hr />
+<h2 id="5-technology-architecture">5. Technology Architecture</h2>
+<p><strong>Purpose:</strong> Outline infrastructure, security, and networking decisions, ensuring they align with data residency and compliance requirements.</p>
+<h3 id="51-infrastructure-cloud-services">5.1 Infrastructure &amp; Cloud Services</h3>
+<table>
+<thead>
+<tr>
+<th><strong>Layer</strong></th>
+<th><strong>Description</strong></th>
+<th><strong>Services/Tools</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Compute</td>
+<td>Region-specific GPU instances (EU, US)</td>
+<td>AWS EC2 (EU), GCP (US)</td>
+</tr>
+<tr>
+<td>Storage</td>
+<td>Localized Data Lakes</td>
+<td>AWS S3 (EU region), Azure (EU)</td>
+</tr>
+<tr>
+<td>Containerization</td>
+<td>Region-specific Kubernetes clusters</td>
+<td>Kubernetes, Helm</td>
+</tr>
+<tr>
+<td>Orchestration</td>
+<td>Region-aware pipelines</td>
+<td>Airflow, Kubeflow</td>
+</tr>
+</tbody>
+</table>
+<p><em>Guidance:</em> Strictly enforce data residency rules at the infrastructure level (e.g., no cross-region data movement).</p>
+<h3 id="52-security-networking">5.2 Security &amp; Networking</h3>
+<table>
+<thead>
+<tr>
+<th><strong>Measure</strong></th>
+<th><strong>Description</strong></th>
+<th><strong>Tools/Standards</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IAM &amp; RBAC</td>
+<td>Least privilege by region/role</td>
+<td>AWS IAM, Azure AD</td>
+</tr>
+<tr>
+<td>Encryption</td>
+<td>Data at rest/in transit, region-specific keys</td>
+<td>KMS, TLS/SSL</td>
+</tr>
+<tr>
+<td>Network Segmentation</td>
+<td>Logical separation of EU and US data flows</td>
+<td>VPCs, Firewalls, VPNs</td>
+</tr>
+</tbody>
+</table>
+<p><em>Guidance:</em> Security measures must adapt to changes in regional requirements or emerging threats.</p>
+<hr />
+<h2 id="6-implementation-phasing">6. Implementation &amp; Phasing</h2>
+<p><strong>Purpose:</strong> Provide a roadmap for phased implementation, with compliance checkpoints integrated into each phase.</p>
+<h3 id="61-phases-milestones">6.1 Phases &amp; Milestones</h3>
+<table>
+<thead>
+<tr>
+<th><strong>Phase</strong></th>
+<th><strong>Description</strong></th>
+<th><strong>Milestones</strong></th>
+<th><strong>Timeline</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Phase 1</td>
+<td>Data Prep &amp; Compliance Setup</td>
+<td>EU Data Lake online, compliance checks configured</td>
+<td>Month 1-2</td>
+</tr>
+<tr>
+<td>Phase 2</td>
+<td>Model Development &amp; Validation</td>
+<td>Baseline model, bias/fairness tests passed</td>
+<td>Month 3-4</td>
+</tr>
+<tr>
+<td>Phase 3</td>
+<td>Integration &amp; Deployment</td>
+<td>Model served in EU environment, logs validated</td>
+<td>Month 5-6</td>
+</tr>
+<tr>
+<td>Phase 4</td>
+<td>Testing &amp; Audit Dry Run</td>
+<td>Conduct mock EU AI Act audit, fix gaps</td>
+<td>Month 7</td>
+</tr>
+<tr>
+<td>Phase 5</td>
+<td>Production Go-Live &amp; Monitoring</td>
+<td>Go-live in EU, continuous compliance monitoring</td>
+<td>Month 8</td>
+</tr>
+</tbody>
+</table>
+<p><em>Guidance:</em> Insert compliance reviews at the end of each phase to catch issues early.</p>
+<h3 id="62-migration-strategy">6.2 Migration Strategy</h3>
+<table>
+<thead>
+<tr>
+<th><strong>Step</strong></th>
+<th><strong>Description</strong></th>
+<th><strong>Owner</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Assessment</td>
+<td>Evaluate existing systems/data laws</td>
+<td>IT Manager, Legal</td>
+</tr>
+<tr>
+<td>Migration Prep</td>
+<td>Develop region-specific migration scripts</td>
+<td>Data Engineer</td>
+</tr>
+<tr>
+<td>Staging Test</td>
+<td>Validate compliance logs in staging</td>
+<td>QA, Compliance Team</td>
+</tr>
+<tr>
+<td>Execute &amp; Validate</td>
+<td>Perform migration, confirm no data leaves allowed regions</td>
+<td>IT Manager, Data Eng.</td>
+</tr>
+<tr>
+<td>Post-Migration Monitoring</td>
+<td>Continuous checks &amp; improvements</td>
+<td>MLOps Engineer, Ops</td>
+</tr>
+</tbody>
+</table>
+<p><em>Guidance:</em> Include rollback plans if compliance checks fail during migration.</p>
+<hr />
+<h2 id="7-risk-management-model-governance">7. Risk Management &amp; Model Governance</h2>
+<p><strong>Purpose:</strong> Identify and mitigate regulatory and operational risks, including non-compliance with global frameworks.</p>
+<h3 id="71-risk-mitigation">7.1 Risk &amp; Mitigation</h3>
+<table>
+<thead>
+<tr>
+<th><strong>Risk</strong></th>
+<th><strong>Impact</strong></th>
+<th><strong>Probability</strong></th>
+<th><strong>Mitigation</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Non-Compliance (EU AI Act)</td>
+<td>High: Legal &amp; financial penalties</td>
+<td>Medium</td>
+<td>Regular audits, documentation, human oversight</td>
+</tr>
+<tr>
+<td>Data Privacy Breach</td>
+<td>High: Legal/reputational damage</td>
+<td>Medium</td>
+<td>Encryption, IAM, periodic security reviews</td>
+</tr>
+<tr>
+<td>Model Bias</td>
+<td>Medium: Unfair decisions</td>
+<td>High</td>
+<td>Bias tests, retraining, diverse datasets</td>
+</tr>
+<tr>
+<td>Data Residency Violation</td>
+<td>High: Regulatory fines</td>
+<td>Medium</td>
+<td>Strict geofencing, audit logs, routine checks</td>
+</tr>
+</tbody>
+</table>
+<p><em>Guidance:</em> Reassess risks periodically, especially if new frameworks (e.g., new state privacy laws) are introduced.</p>
+<h3 id="72-ethical-explainable-ai">7.2 Ethical &amp; Explainable AI</h3>
+<table>
+<thead>
+<tr>
+<th><strong>Aspect</strong></th>
+<th><strong>Action</strong></th>
+<th><strong>Tooling</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Explainability</td>
+<td>Document model logic, provide SHAP/LIME</td>
+<td>SHAP, LIME</td>
+</tr>
+<tr>
+<td>Fairness Checks</td>
+<td>Regular bias assessments, corrective actions</td>
+<td>Fairlearn, Aequitas</td>
+</tr>
+<tr>
+<td>Documentation</td>
+<td>Log decision rationale, model changes</td>
+<td>MLflow, Confluence</td>
+</tr>
+</tbody>
+</table>
+<p><em>Guidance:</em> Maintaining thorough documentation helps satisfy audits from multiple frameworks.</p>
+<hr />
+<h2 id="8-regulatory-audit-framework-alignment">8. Regulatory &amp; Audit Framework Alignment</h2>
+<p><strong>Purpose:</strong> Provide a structured approach to track and align with multiple frameworks and laws, supporting ongoing governance of AI changes.</p>
+<h3 id="81-framework-mapping-control-matrix">8.1 Framework Mapping &amp; Control Matrix</h3>
+<table>
+<thead>
+<tr>
+<th><strong>Framework/Act</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Relevant Project Stages</strong></th>
+<th><strong>Required Artifacts</strong></th>
+<th><strong>Update Frequency</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>EU AI Act</td>
+<td>AI Regulation</td>
+<td>Model Dev, Deployment, Operations</td>
+<td>Risk classification, decision logs, human oversight docs</td>
+<td>Quarterly or upon model changes</td>
+</tr>
+<tr>
+<td>GDPR</td>
+<td>Data Privacy</td>
+<td>Data Collection, Storage, Retention</td>
+<td>Consent records, DSAR logs, pseudonymization proof</td>
+<td>Continuous, monthly audits</td>
+</tr>
+<tr>
+<td>HIPAA</td>
+<td>Health Data</td>
+<td>Data Processing, Storage (US)</td>
+<td>Access logs, PHI masking strategies, incident reports</td>
+<td>Monthly or after infra changes</td>
+</tr>
+<tr>
+<td>CCPA</td>
+<td>Data Privacy</td>
+<td>US Customer Data Handling</td>
+<td>Opt-out request logs, transparency reports</td>
+<td>As requested, yearly audit</td>
+</tr>
+</tbody>
+</table>
+<p><em>Guidance:</em> Extend this table as you add more frameworks. For each regulation:  </p>
+<ul>
+<li>Identify applicable project stages (data ingestion, model training, deployment).  </li>
+<li>Specify artifacts required (logs, documentation, model sheets).  </li>
+<li>Define how often to review and update these artifacts.</li>
+</ul>
+<h3 id="82-compliance-change-management">8.2 Compliance Change Management</h3>
+<table>
+<thead>
+<tr>
+<th><strong>Change Trigger</strong></th>
+<th><strong>Action</strong></th>
+<th><strong>Owner</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>New Law/Framework</td>
+<td>Add new rows to Framework Matrix, update RACI, adjust pipelines</td>
+<td>Legal &amp; Compliance Team</td>
+</tr>
+<tr>
+<td>Model Update/Versioning</td>
+<td>Review EU AI Act compliance, re-run bias tests, update logs</td>
+<td>MLOps Engineer, Data Scientist</td>
+</tr>
+<tr>
+<td>Infrastructure Update</td>
+<td>Check data residency compliance, re-verify encryption keys</td>
+<td>IT Manager, Ops</td>
+</tr>
+</tbody>
+</table>
+<p><em>Guidance:</em> Treat compliance changes as a continuous improvement process. Have version-controlled documentation (e.g., Git repo for compliance docs) and keep a changelog of regulatory updates.</p>
+<h3 id="83-audit-readiness-evidence-repository">8.3 Audit Readiness &amp; Evidence Repository</h3>
+<table>
+<thead>
+<tr>
+<th><strong>Artifact</strong></th>
+<th><strong>Location</strong></th>
+<th><strong>Access Control</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Model Training Logs</td>
+<td>MLflow/Cloud Storage</td>
+<td>Restricted to Data Sci, Compliance</td>
+</tr>
+<tr>
+<td>Compliance Reports</td>
+<td>Confluence/Wiki</td>
+<td>Legal, Compliance, Audit Teams</td>
+</tr>
+<tr>
+<td>Security Incident Logs</td>
+<td>SIEM Tool (e.g., Splunk)</td>
+<td>SecOps, Compliance</td>
+</tr>
+</tbody>
+</table>
+<p><em>Guidance:</em> Maintain a central evidence repository. Auditors should find what they need easily. Tag artifacts with relevant frameworks for quick reference.</p>
+<hr />
+<h2 id="9-methodologies-best-practices">9. Methodologies &amp; Best Practices</h2>
+<p><strong>Purpose:</strong> Align with industry-standard frameworks (CRISP-DM, DataOps, MLOps) and best practices, integrating compliance at each step.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Stage</strong></th>
+<th><strong>Activity</strong></th>
+<th><strong>Compliance Check</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Business Understanding</td>
+<td>Set metrics/goals</td>
+<td>Confirm alignment with relevant laws</td>
+</tr>
+<tr>
+<td>Data Preparation</td>
+<td>Clean, transform data</td>
+<td>Validate no violation of data residency</td>
+</tr>
+<tr>
+<td>Modeling</td>
+<td>Train &amp; validate model</td>
+<td>Check bias, fairness, document lineage</td>
+</tr>
+<tr>
+<td>Evaluation</td>
+<td>Assess performance vs. KPIs</td>
+<td>Ensure logs meet EU AI Act guidelines</td>
+</tr>
+<tr>
+<td>Deployment (MLOps)</td>
+<td>Automate delivery &amp; ops</td>
+<td>Compliance gates in CI/CD pipeline</td>
+</tr>
+<tr>
+<td>Monitoring &amp; Maintenance</td>
+<td>Track performance, retrain models</td>
+<td>Ongoing audits, evidence updates</td>
+</tr>
+</tbody>
+</table>
+<p><em>Guidance:</em> Insert “compliance checkpoints” throughout the lifecycle.</p>
+<hr />
+<h2 id="10-appendices">10. Appendices</h2>
+<h3 id="101-glossary">10.1 Glossary</h3>
+<table>
+<thead>
+<tr>
+<th><strong>Term</strong></th>
+<th><strong>Definition</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>EU AI Act</td>
+<td>EU regulation for AI risk classification &amp; oversight</td>
+</tr>
+<tr>
+<td>DSAR</td>
+<td>Data Subject Access Request (GDPR right)</td>
+</tr>
+<tr>
+<td>PHI</td>
+<td>Protected Health Information (under HIPAA)</td>
+</tr>
+<tr>
+<td>DVC</td>
+<td>Data Version Control (tool for tracking data changes)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="102-references-resources">10.2 References &amp; Resources</h3>
+<ul>
+<li><strong>EU AI Act Documentation:</strong> [Link]  </li>
+<li><strong>GDPR Guidelines:</strong> [Link]  </li>
+<li><strong>HIPAA Compliance Overview:</strong> [Link]  </li>
+<li><strong>CCPA Resources:</strong> [Link]  </li>
+<li><strong>CRISP-DM Guide:</strong> [Link]  </li>
+<li><strong>MLOps Frameworks:</strong> [Link to Kubeflow, MLflow docs]</li>
+</ul>
+<p><em>Guidance:</em> Update references as laws and frameworks evolve.</p>
+<hr />
+<h2 id="11-revision-history">11. Revision History</h2>
+<p>Revisit this template regularly as business operations expand, laws change, and new compliance frameworks arise. This template is designed for iterative updates, ensuring that any AI-related changes (new models, changed data pipelines, adjusted infrastructures) remain governed, compliant, and audit-ready, sir.</p>
+
+
+
+
+
+
+
+  
+  
+
+
+  <aside class="md-source-file">
+    
+    
+    
+      
+  
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Contributors">
+      
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 4a4 4 0 0 1 4 4 4 4 0 0 1-4 4 4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 10c4.42 0 8 1.79 8 4v2H4v-2c0-2.21 3.58-4 8-4"/></svg>
+      
+    </span>
+    <nav>
+      
+        <a href="mailto:dcristian353@gmail.com">cristianexer</a>
+    </nav>
+  </span>
+
+    
+    
+  </aside>
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../9.-AI-Governance-and-Security/05-Auditing-and-Monitoring-AI-Systems.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Auditing and Monitoring AI Systems">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Auditing and Monitoring AI Systems
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../Learning-Materials/TOGAF/index.html" class="md-footer__link md-footer__link--next" aria-label="Next: TOGAF® Enterprise Architecture 10th Edition - Learning Resources">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                TOGAF® Enterprise Architecture 10th Edition - Learning Resources
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      AI Architecture | Infernce Institute
+    </div>
+  
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/inference-institute" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="mailto:daniel.fat@inference.institute" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4l217.6 163.2c11.4 8.5 27 8.5 38.4 0l217.6-163.2c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48zM0 176v208c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V176L294.4 339.2a63.9 63.9 0 0 1-76.8 0z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.indexes", "navigation.instant", "navigation.instant.progress", "navigation.footer"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.88dd0f4e.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>

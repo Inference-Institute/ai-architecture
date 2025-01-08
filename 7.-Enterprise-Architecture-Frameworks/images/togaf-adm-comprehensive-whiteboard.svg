@@ -1,0 +1,205 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1200">
+  <!-- Background -->
+  <rect width="1600" height="1600" fill="#f0f0f0"/>
+  
+  <!-- Main ADM circle -->
+  <circle cx="800" cy="600" r="450" fill="#fff" stroke="#333" stroke-width="2"/>
+  
+  <!-- ADM Phases -->
+  <g font-family="Arial, sans-serif" font-size="16">
+    <!-- Preliminary -->
+    <circle cx="800" cy="150" r="50" fill="#FFD700"/>
+    <text x="800" y="155" text-anchor="middle">Preliminary</text>
+    
+    <!-- Vision -->
+    <circle cx="1170" cy="270" r="50" fill="#FF6347"/>
+    <text x="1170" y="275" text-anchor="middle">A: Vision</text>
+    
+    <!-- Business -->
+    <circle cx="1300" cy="600" r="50" fill="#4682B4"/>
+    <text x="1300" y="605" text-anchor="middle">B: Business</text>
+    
+    <!-- Information Systems -->
+    <circle cx="1170" cy="930" r="50" fill="#32CD32"/>
+    <text x="1170" y="925" text-anchor="middle" font-size="14">C: Information</text>
+    <text x="1170" y="945" text-anchor="middle" font-size="14">Systems</text>
+    
+    <!-- Technology -->
+    <circle cx="800" cy="1050" r="50" fill="#9370DB"/>
+    <text x="800" y="1055" text-anchor="middle">D: Technology</text>
+    
+    <!-- Opportunities -->
+    <circle cx="430" cy="930" r="50" fill="#FF69B4"/>
+    <text x="430" y="925" text-anchor="middle" font-size="14">E: Opportunities</text>
+    <text x="430" y="945" text-anchor="middle" font-size="14">& Solutions</text>
+    
+    <!-- Migration -->
+    <circle cx="300" cy="600" r="50" fill="#20B2AA"/>
+    <text x="300" y="595" text-anchor="middle" font-size="14">F: Migration</text>
+    <text x="300" y="615" text-anchor="middle" font-size="14">Planning</text>
+    
+    <!-- Implementation -->
+    <circle cx="430" cy="270" r="50" fill="#FFA500"/>
+    <text x="430" y="265" text-anchor="middle" font-size="13">G: Implementation</text>
+    <text x="430" y="285" text-anchor="middle" font-size="13">Governance</text>
+    
+    <!-- Change Management -->
+    <circle cx="800" cy="400" r="50" fill="#8A2BE2"/>
+    <text x="800" y="395" text-anchor="middle" font-size="13">H: Architecture</text>
+    <text x="800" y="415" text-anchor="middle" font-size="13">Change Mgmt</text>
+    
+    <!-- Requirements Management -->
+    <circle cx="800" cy="600" r="70" fill="#F08080"/>
+    <text x="800" y="590" text-anchor="middle">Requirements</text>
+    <text x="800" y="615" text-anchor="middle">Management</text>
+  </g>
+  
+  <!-- Connections -->
+  <g stroke="#666" stroke-width="1.5" fill="none">
+    <path d="M800 200 L1170 270"/>
+    <path d="M1170 320 L1300 550"/>
+    <path d="M1300 650 L1170 880"/>
+    <path d="M1170 980 L800 1000"/>
+    <path d="M800 1100 L430 980"/>
+    <path d="M430 880 L300 650"/>
+    <path d="M300 550 L430 320"/>
+    <path d="M430 220 L800 350"/>
+    <path d="M800 450 L1170 270"/>
+  </g>
+  
+  <!-- Key Aspects -->
+  <g font-family="Arial, sans-serif" font-size="12">
+    <!-- Preliminary -->
+    <text x="640" y="50">Framework Definition</text>
+    <text x="640" y="70">Principles Establishment</text>
+    <text x="640" y="90">Scope Definition</text>
+    <text x="640" y="110">Tailoring TOGAF</text>
+    
+    <!-- Vision -->
+    <text x="1250" y="180">Stakeholder Management</text>
+    <text x="1250" y="200">High-level Vision</text>
+    <text x="1250" y="220">Value Proposition</text>
+    <text x="1250" y="240">KPIs Definition</text>
+    
+    <!-- Business -->
+    <text x="1400" y="520">Business Capabilities</text>
+    <text x="1400" y="540">Process Analysis</text>
+    <text x="1400" y="560">Gap Analysis</text>
+    <text x="1400" y="580">Organizational Structure</text>
+    
+    <!-- Information Systems -->
+    <text x="1250" y="1020">Data Architecture</text>
+    <text x="1250" y="1040">Application Architecture</text>
+    <text x="1250" y="1060">Integration Strategy</text>
+    <text x="1250" y="1080">Information Flow</text>
+    
+    <!-- Technology -->
+    <text x="920" y="1120">Technology Components</text>
+    <text x="920" y="1140">Platform Services</text>
+    <text x="920" y="1160">Infrastructure Topology</text>
+    <text x="920" y="1180">Standards & Policies</text>
+    
+    <!-- Opportunities -->
+    <text x="200" y="1020">Implementation Projects</text>
+    <text x="200" y="1040">Transition Architectures</text>
+    <text x="200" y="1060">Business Value Assessment</text>
+    <text x="200" y="1080">Dependency Analysis</text>
+    
+    <!-- Migration -->
+    <text x="50" y="520">Architecture Roadmap</text>
+    <text x="50" y="540">Migration Strategy</text>
+    <text x="50" y="560">Risk Management</text>
+    <text x="50" y="580">Implementation Plan</text>
+    
+    <!-- Implementation -->
+    <text x="200" y="180">Compliance Reviews</text>
+    <text x="200" y="200">SLA Management</text>
+    <text x="200" y="220">Change Requests</text>
+    <text x="200" y="240">Dispensation Process</text>
+    
+    <!-- Change Management -->
+    <text x="920" y="320">Ongoing Governance</text>
+    <text x="920" y="340">Performance Measurement</text>
+    <text x="920" y="360">Business Continuity</text>
+    <text x="920" y="380">Architecture Updates</text>
+    
+    <!-- Requirements Management -->
+    <text x="920" y="580">Requirements Identification</text>
+    <text x="920" y="600">Impact Analysis</text>
+    <text x="920" y="620">Traceability</text>
+    <text x="920" y="640">Change Management</text>
+  </g>
+  
+  <!-- Techniques -->
+  <g font-family="Arial, sans-serif" font-size="11" fill="#1E90FF">
+    <text x="640" y="140">Capability Assessment</text>
+    <text x="640" y="160">Maturity Assessment</text>
+    <text x="1250" y="260">Business Scenarios</text>
+    <text x="1250" y="280">SWOT Analysis</text>
+    <text x="1400" y="600">Use-case Analysis</text>
+    <text x="1400" y="620">Business Modeling</text>
+    <text x="1250" y="1100">CRUD Matrix</text>
+    <text x="1250" y="1120">Data Flow Diagrams</text>
+    <text x="920" y="1200">Technology Standards Catalog</text>
+    <text x="920" y="1220">Platform Decomposition</text>
+    <text x="200" y="1100">Capability-based Planning</text>
+    <text x="200" y="1120">Project Sequencing</text>
+    <text x="50" y="600">Implementation Sequencing</text>
+    <text x="50" y="620">Transition Architecture Definition</text>
+    <text x="200" y="260">Architecture Compliance Reviews</text>
+    <text x="200" y="280">Project Impact Assessments</text>
+    <text x="920" y="400">Change Request Impact Analysis</text>
+    <text x="920" y="420">Technology Watch</text>
+    <text x="640" y="580">Prioritisation Techniques</text>
+    <text x="640" y="600">Requirements Traceability Matrix</text>
+  </g>
+  
+  <!-- Additional Explanations -->
+  <g font-family="Arial, sans-serif" font-size="14">
+    <text x="50" y="50" font-weight="bold">TOGAF ADM Cycle</text>
+    <text x="50" y="80" font-size="12">The ADM is iterative, allowing for:</text>
+    <text x="70" y="100" font-size="12">- Incremental development</text>
+    <text x="70" y="120" font-size="12">- Continuous refinement</text>
+    <text x="70" y="140" font-size="12">- Adaptation to changing requirements</text>
+    
+    <text x="1400" y="50" font-weight="bold">Key Principles</text>
+    <text x="1400" y="80" font-size="12">1. Adaptability</text>
+    <text x="1400" y="100" font-size="12">2. Stakeholder-driven</text>
+    <text x="1400" y="120" font-size="12">3. Value-focused</text>
+    <text x="1400" y="140" font-size="12">4. Holistic approach</text>
+    
+    <text x="50" y="1150" font-weight="bold">Deliverables</text>
+    <text x="50" y="1180" font-size="12">- Architecture Vision</text>
+    <text x="50" y="1200" font-size="12">- Architecture Definition Document</text>
+    <text x="50" y="1220" font-size="12">- Architecture Requirements Specification</text>
+    <text x="250" y="1180" font-size="12">- Architecture Roadmap</text>
+    <text x="250" y="1200" font-size="12">- Implementation and Migration Plan</text>
+    <text x="250" y="1220" font-size="12">- Architecture Contract</text>
+    
+    <text x="1400" y="1150" font-weight="bold">Best Practices</text>
+    <text x="1400" y="1180" font-size="12">1. Engage stakeholders early and often</text>
+    <text x="1400" y="1200" font-size="12">2. Focus on business value</text>
+    <text x="1400" y="1220" font-size="12">3. Use existing assets where possible</text>
+  </g>
+  
+  <!-- Callouts -->
+  <g font-family="Arial, sans-serif" font-size="12">
+    <path d="M800 680 L800 750 L950 750" fill="none" stroke="#333" stroke-width="1"/>
+    <rect x="950" y="720" width="250" height="70" fill="#fff" stroke="#333"/>
+    <text x="960" y="740">Requirements Management is central</text>
+    <text x="960" y="760">and interacts with all phases,</text>
+    <text x="960" y="780">ensuring traceability and consistency.</text>
+    
+    <path d="M1350 600 L1450 600 L1450 680" fill="none" stroke="#333" stroke-width="1"/>
+    <rect x="1400" y="680" width="180" height="70" fill="#fff" stroke="#333"/>
+    <text x="1410" y="700">Business Architecture sets</text>
+    <text x="1410" y="720">the foundation for subsequent</text>
+    <text x="1410" y="740">architecture development.</text>
+    
+    <path d="M300 550 L200 550 L200 450" fill="none" stroke="#333" stroke-width="1"/>
+    <rect x="20" y="390" width="180" height="70" fill="#fff" stroke="#333"/>
+    <text x="30" y="410">Migration Planning ensures</text>
+    <text x="30" y="430">a smooth transition from</text>
+    <text x="30" y="450">baseline to target architecture.</text>
+  </g>
+</svg>
