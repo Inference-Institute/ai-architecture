@@ -78,5 +78,3 @@ mindmap
 This is a living document, evolving with the rapid pace of AI advancement. Your expertise and insights can help shape the future of AI architecture. Join us on GitHub to contribute.
 
 Let's architect the future of AI, together. 🚀
-
-
