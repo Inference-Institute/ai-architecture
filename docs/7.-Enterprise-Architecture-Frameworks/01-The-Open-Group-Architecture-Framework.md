@@ -636,7 +636,7 @@ Understanding these key concepts is crucial for effectively applying TOGAF in pr
 
 TOGAF provides a set of techniques to support architecture development. Here are some key techniques with their definitions and reasoning:
 
-###Architecture Principles
+### Architecture Principles
 
 **Definition**: Architecture principles define the underlying general rules and guidelines for the use and deployment of all IT resources and assets across the enterprise.
 
@@ -648,7 +648,7 @@ Example principles:
 - Information Management is Everybody's Business
 - Compliance with Law
 
-###Stakeholder Management
+### Stakeholder Management
 
 **Definition**: Stakeholder management involves identifying and managing the stakeholders for an architecture project.
 
@@ -661,7 +661,7 @@ Steps:
 3. Determine stakeholder viewpoints
 4. Manage stakeholder expectations
 
-###Business Scenarios
+### Business Scenarios
 
 **Definition**: Business scenarios are a technique to discover and document business requirements and derive the business and technical requirements for the architecture.
 
@@ -675,7 +675,7 @@ Components of a business scenario:
 - Business and technical environment
 - Architecture components
 
-###Gap Analysis
+### Gap Analysis
 
 **Definition**: Gap analysis is used to validate an architecture by comparing it with a known state or model.
 
@@ -688,7 +688,7 @@ Steps:
 3. Compare baseline and target
 4. Document gaps
 
-###Business Transformation Readiness Assessment
+### Business Transformation Readiness Assessment
 
 **Definition**: This technique is used to evaluate and quantify an organization's readiness to undergo change.
 
@@ -709,7 +709,7 @@ Factors assessed:
 - Enterprise Capacity to Execute
 - Enterprise Ability to Implement and Operate
 
-###Risk Management
+### Risk Management
 
 **Definition**: Risk management in TOGAF involves identifying, classifying, and mitigating risks associated with the architecture work.
 
@@ -723,7 +723,7 @@ Risk management steps:
 4. Treat risks
 5. Monitor risks
 
-###Capability-Based Planning
+### Capability-Based Planning
 
 **Definition**: Capability-based planning focuses on the planning, engineering, and delivery of strategic business capabilities to the enterprise.
 
