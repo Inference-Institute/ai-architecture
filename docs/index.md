@@ -1,5 +1,5 @@
 ---
-title: AI Architectecture
+title: AI Architecture
 description: A comprehensive guide to AI systems architecture for architects and developers by Inference Institute.
 author: Inference Institute
 ---
