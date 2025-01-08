@@ -57,6 +57,10 @@ plugins:
 
 
 extra:
+  analytics:
+    provider: google
+    property: G-JF4QZPDSXY
+
   generator: false
   social:
     - icon: fontawesome/brands/github
