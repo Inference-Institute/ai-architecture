@@ -1,0 +1,8 @@
+mkdocs
+pymdown-extensions
+mkdocs-material
+mkdocs-git-authors-plugin
+mkdocs-material[imaging]
+mkdocs-encryptcontent-plugin
+mkdocs-inline-select-svg-plugin
+mkdocs-glightbox

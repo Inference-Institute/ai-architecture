@@ -1,0 +1,5 @@
+.DS_Store
+.cache
+*.cache
+
+docs/Learning-Materials/TOGAF/Mock-Tests/trials/*

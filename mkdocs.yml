@@ -1,0 +1,70 @@
+site_name: AI Architecture
+site_url: https://architecture.inference.institute
+copyright: AI Architecture | Infernce Institute
+repo_name: inference-institute/AI-Architecture
+repo_url: https://github.com/inference-institute/AI-Architecture
+
+theme:
+  name: material
+  logo: static/logo.png
+  favicon: static/logo.png
+  features:
+    - navigation.indexes
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.footer
+
+  icons:
+    repo: fontawesome/brands/github
+
+  palette:
+    
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: black
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+markdown_extensions: 
+  - attr_list
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+        
+plugins:
+  - offline
+  - social
+  - git-authors
+  - search
+  - tags
+  - inline-select-svg
+  - glightbox
+
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/inference-institute
+
+    - icon: fontawesome/solid/envelope
+      link: mailto:daniel.fat@inference.institute
+
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
