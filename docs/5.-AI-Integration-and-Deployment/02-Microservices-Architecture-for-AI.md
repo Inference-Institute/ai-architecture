@@ -1,3 +1,8 @@
+---
+title: Microservices Architecture for AI
+description: Learn about designing AI systems using a microservices approach, enabling scalability, modularity, and fault tolerance.
+author: Inference Institute
+---
 # Microservices Architecture for AI
 
 The **Microservices Architecture for AI** section dives into designing AI systems using a microservices approach. Microservices provide a scalable, modular, and fault-tolerant structure for deploying AI models and services, allowing different components to be developed, deployed, and maintained independently. This architecture is ideal for complex AI solutions requiring agility, scalability, and resilience.

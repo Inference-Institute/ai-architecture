@@ -1,3 +1,8 @@
+---
+title: Computer Vision
+description: Explore the core concepts and techniques in Computer Vision, from image processing and feature detection to object detection and semantic segmentation.
+author: Inference Institute
+---
 # Computer Vision
 
 Computer Vision (CV) is a field of artificial intelligence that enables machines to interpret and understand visual information from the world around them. It's the science of making computers gain high-level understanding from digital images or videos, aiming to automate tasks that the human visual system can do.

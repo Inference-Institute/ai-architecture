@@ -1,3 +1,8 @@
+---
+title: Model Versioning and Experiment Tracking
+description: Learn about best practices, tools, and strategies for implementing effective model versioning and experiment tracking in AI projects.
+author: Inference Institute
+---
 # Model Versioning and Experiment Tracking
 
 Model versioning and experiment tracking are essential practices in the AI model lifecycle that ensure reproducibility, improve collaboration, and maintain a clear record of model evolution. In complex AI projects, multiple versions of models are developed and tested, making it critical to track changes systematically. This section covers best practices, tools, and strategies for implementing effective model versioning and experiment tracking.

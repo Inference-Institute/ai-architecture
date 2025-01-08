@@ -1,3 +1,8 @@
+---
+title: Model Governance and Compliance
+description: Model governance and compliance ensure that AI models are developed, deployed, and managed responsibly, aligning with legal, ethical, and organizational standards. This page explores the frameworks, workflows, and tools necessary to establish effective model governance and compliance strategies.
+author: Inference Institute
+---
 # Model Governance and Compliance  
 
 ## Introduction  

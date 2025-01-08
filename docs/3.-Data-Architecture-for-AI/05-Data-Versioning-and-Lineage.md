@@ -1,3 +1,8 @@
+---
+title: Data Versioning and Lineage
+description: Learn about the critical aspects of tracking data changes over time and maintaining clear lineage for reproducibility and compliance.
+author: Inference Institute
+---
 # Data Versioning and Lineage
 
 Data versioning and lineage are critical components of a robust data architecture, especially for AI-driven systems. They help track how data evolves over time, document its journey through various stages of the data pipeline, and provide a transparent view of the entire data lifecycle. By implementing these practices, AI architects can ensure reproducibility, improve compliance, enhance collaboration, and streamline debugging efforts.

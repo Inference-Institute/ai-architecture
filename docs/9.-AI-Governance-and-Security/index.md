@@ -1,3 +1,8 @@
+---
+title: AI Governance and Security
+description: AI Governance and Security are foundational to building responsible, trustworthy, and resilient AI systems. This section provides a comprehensive framework for governing AI systems while ensuring their security and ethical alignment.
+author: Inference Institute
+---
 # AI Governance and Security  
 
 ## Introduction  

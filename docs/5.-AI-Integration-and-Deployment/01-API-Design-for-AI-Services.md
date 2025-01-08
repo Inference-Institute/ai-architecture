@@ -1,3 +1,8 @@
+---
+title: API Design for AI Services
+description: Learn about the essentials of designing APIs for AI services, including best practices for creating robust, efficient, and secure APIs that enable seamless integration of AI models into real-world applications.
+author: Inference Institute
+---
 # API Design for AI Services
 
 In this section, we will cover the essentials of designing APIs for AI services. Effective API design is critical for integrating AI models into real-world applications, enabling seamless access, scalability, and maintainability. The goal is to create robust, efficient, and secure APIs that allow clients to easily interact with AI models, regardless of the underlying technology stack.

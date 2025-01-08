@@ -1,3 +1,8 @@
+---
+title: TOGAF® Enterprise Architecture 10th Edition - Learning Resources
+description: Access official learning resources for the TOGAF® Enterprise Architecture 10th Edition to enhance your understanding of the framework and its application in practice.
+author: Inference Institute
+---
 # TOGAF® Enterprise Architecture 10th Edition - Learning Resources
 
 ## Introduction

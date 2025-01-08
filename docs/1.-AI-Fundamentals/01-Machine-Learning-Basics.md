@@ -1,3 +1,8 @@
+---
+title: Machine Learning Basics
+description: A comprehensive guide to machine learning fundamentals for beginners and practitioners by Inference Institute.
+author: Inference Institute
+---
 # Machine Learning Basics
 
 ## Introduction to Machine Learning

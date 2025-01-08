@@ -1,3 +1,8 @@
+---
+title: AI Model Lifecycle Management
+description: Learn about the end-to-end lifecycle of AI models, from development and training to deployment and maintenance.
+author: Inference Institute
+---
 # AI Model Lifecycle Management
 
 Welcome to the **AI Model Lifecycle Management** section of the AI Architect Handbook. This section provides a comprehensive overview of the end-to-end lifecycle of AI models, from development and training to deployment and maintenance. Managing the lifecycle of AI models is a critical aspect of building robust, scalable, and reliable AI solutions. By following best practices in lifecycle management, organizations can streamline the development process, ensure model reproducibility, and maintain consistent model performance in production environments.

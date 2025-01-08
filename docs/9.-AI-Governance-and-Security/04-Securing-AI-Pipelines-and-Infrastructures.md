@@ -1,3 +1,8 @@
+---
+title: Securing AI Pipelines and Infrastructures
+description: Learn how to secure AI pipelines and infrastructures to protect data, models, and systems against unauthorized access, adversarial attacks, and operational failures.
+author: Inference Institute
+---
 # Securing AI Pipelines and Infrastructures  
 
 ## Introduction  

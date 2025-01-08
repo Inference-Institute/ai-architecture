@@ -1,3 +1,8 @@
+---
+title: Ethical Guidelines and Frameworks for AI
+description: Explore established principles, industry standards, and frameworks that guide the ethical development, deployment, and use of AI systems. Learn about key ethical principles, established frameworks, and real-world examples of ethical AI implementation.
+author: Inference Institute
+---
 # Ethical Guidelines and Frameworks for AI
 
 The **Ethical Guidelines and Frameworks for AI** section focuses on established principles, industry standards, and frameworks that guide the ethical development, deployment, and use of AI systems. Adhering to ethical guidelines ensures AI systems are aligned with societal values, comply with legal requirements, and build trust among users and stakeholders.

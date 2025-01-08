@@ -1,3 +1,8 @@
+---
+title: Reinforcement Learning
+description: Explore the principles, algorithms, and applications of Reinforcement Learning (RL), a powerful paradigm in machine learning that enables agents to learn through interaction with an environment.
+author: Inference Institute
+---
 # Reinforcement Learning
 
 Reinforcement Learning (RL) is a powerful paradigm in machine learning where an agent learns to make decisions by interacting with an environment. It's inspired by behavioral psychology, focusing on how software agents ought to take actions in an environment to maximize some notion of cumulative reward.

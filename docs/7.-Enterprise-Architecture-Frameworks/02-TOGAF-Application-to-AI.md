@@ -1,3 +1,8 @@
+---
+title: TOGAF Application to AI
+description: Learn how to apply The Open Group Architecture Framework (TOGAF) to AI initiatives. Explore the Architecture Development Method (ADM) for developing AI-enabled enterprise architectures.
+author: Inference Institute
+---
 # Applying TOGAF to AI Initiatives
 
 ### Introduction

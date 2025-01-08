@@ -1,3 +1,8 @@
+---
+title: Model Deployment and Serving
+description: Learn about best practices for deploying and serving machine learning models in production environments, including strategies, architectures, and tools for scalability, low latency, and robust monitoring.
+author: Inference Institute
+---
 # Model Deployment and Serving
 
 Model deployment and serving are crucial steps in the AI model lifecycle. Once a model has been trained, validated, and optimized, it needs to be deployed into a production environment where it can serve real-time predictions or batch inference requests. This section focuses on best practices for model deployment and serving, including strategies, architectures, and tools to ensure scalability, low latency, and robust monitoring.

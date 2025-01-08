@@ -1,3 +1,8 @@
+---
+title: AI Fundamentals
+description: Explore the core concepts and technologies that form the foundation of modern artificial intelligence, including machine learning, deep learning, natural language processing, computer vision, and reinforcement learning.
+author: Inference Institute
+---
 # AI Fundamentals
 
 Welcome to the AI Fundamentals section of our AI Solution Architect handbook. This section provides a comprehensive overview of the core concepts and technologies that form the foundation of modern artificial intelligence.

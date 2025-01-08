@@ -1,3 +1,8 @@
+---
+title: Data Protection and Privacy in AI Systems
+description: Learn about the importance of data protection and privacy in AI systems, key challenges, principles, techniques, compliance with regulations, and best practices.
+author: Inference Institute
+---
 # Data Protection and Privacy in AI Systems  
 
 ## Introduction  

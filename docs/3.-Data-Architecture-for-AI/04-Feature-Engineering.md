@@ -1,3 +1,8 @@
+---
+title: Feature Engineering
+description: Learn the art and science of creating, selecting, and transforming features to improve the performance of machine learning models.
+author: Inference Institute
+---
 # Feature Engineering
 
 Feature engineering is the process of creating new input variables (features) or transforming existing ones to improve the performance of machine learning models. It is a crucial step in the data preparation phase and can often be the difference between a good model and a great model. Effective feature engineering leverages domain knowledge, statistical analysis, and data transformations to create features that provide the model with meaningful signals.

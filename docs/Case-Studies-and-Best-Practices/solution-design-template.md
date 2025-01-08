@@ -1,3 +1,8 @@
+---
+title: AI Enterprise Solution Design & Compliance Template
+description: Use this template as a strategic blueprint for designing AI solutions within an enterprise setting. Each section includes guidance and placeholders to help you align your AI initiatives with business goals, comply with global/regional regulations (e.g., EU AI Act, GDPR, HIPAA, CCPA), and maintain an auditable, transparent record of all changes.
+author: Inference Institute
+---
 # AI Enterprise Solution Design & Compliance Template
 
 **Instructions:**  

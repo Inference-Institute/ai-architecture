@@ -1,3 +1,8 @@
+---
+title: IBM Watson on Cloud
+description: Explore IBM Watson on Cloud, a powerful AI platform that enables enterprises to build, deploy, and scale AI-driven applications. Learn about key services, architecture components, and best practices for leveraging IBM Watson in your AI projects.
+author: Inference Institute
+---
 # IBM Watson on Cloud  
 
 ## Introduction  

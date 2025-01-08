@@ -1,3 +1,8 @@
+---
+title: AI Safety and Robustness
+description: Learn about designing AI systems that are resilient, reliable, and safe in real-world applications, focusing on error handling, adversarial robustness, model uncertainty, and fail-safe mechanisms.
+author: Inference Institute
+---
 # AI Safety and Robustness
 
 The **AI Safety and Robustness** page focuses on designing AI systems that are resilient, reliable, and safe in real-world applications. Safety involves ensuring AI systems do not cause unintended harm, while robustness ensures that systems can handle unexpected or adversarial inputs gracefully. Together, they form a critical part of building trustworthy AI solutions.

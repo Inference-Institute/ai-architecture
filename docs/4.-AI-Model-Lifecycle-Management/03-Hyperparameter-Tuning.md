@@ -1,3 +1,8 @@
+---
+title: Hyperparameter Tuning
+description: Learn about the process of hyperparameter tuning, its importance in optimizing machine learning models, and the strategies and tools used for efficient tuning.
+author: Inference Institute
+---
 # Hyperparameter Tuning
 
 Hyperparameter tuning is the process of systematically searching for the best hyperparameters for a machine learning model. Unlike model parameters (e.g., weights in a neural network), hyperparameters are set before training and govern the model’s overall behavior, such as learning rate, depth of decision trees, or regularization strength. Effective hyperparameter tuning can significantly enhance model performance, reduce overfitting, and improve generalization.

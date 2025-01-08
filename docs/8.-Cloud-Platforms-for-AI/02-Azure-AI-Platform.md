@@ -1,3 +1,8 @@
+---
+title: Azure AI Platform
+description: Explore Microsoft Azure's AI platform, services, and capabilities for building, deploying, and managing AI solutions at scale. Learn about key Azure AI services, architecture components, and best practices for implementing AI on Azure.
+author: Inference Institute
+---
 # Azure AI Platform  
 
 ## Introduction  

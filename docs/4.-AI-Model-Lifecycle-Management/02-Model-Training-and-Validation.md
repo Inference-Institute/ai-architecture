@@ -1,3 +1,8 @@
+---
+title: Model Training and Validation
+description: Learn about the key steps in model training and validation, including data splitting, algorithm selection, model training, validation techniques, evaluation metrics, and iterative improvement.
+author: Inference Institute
+---
 # Model Training and Validation
 
 Model training and validation are core components of the AI model lifecycle. This stage is where the model learns patterns from the data, is evaluated for its predictive performance, and is iteratively refined based on the validation results. In this section, we will cover the end-to-end process of model training and validation, including best practices, techniques, and real-world examples.

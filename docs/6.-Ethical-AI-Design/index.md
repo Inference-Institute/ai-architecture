@@ -1,3 +1,8 @@
+---
+title: Ethical AI Design
+description: Explore the principles and practices of designing AI systems that are fair, transparent, safe, and aligned with societal values.
+author: Inference Institute
+---
 # Ethical AI Design
 
 Welcome to the **Ethical AI Design** section of the AI Architect Handbook. This section delves into the principles and practices of designing AI systems that are fair, transparent, safe, and aligned with societal values. As AI becomes more prevalent in critical applications, ethical considerations are paramount to prevent unintended consequences, biases, and harm. By incorporating ethical principles into the design process, organizations can build AI systems that are trustworthy, equitable, and respectful of user privacy.

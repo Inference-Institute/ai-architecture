@@ -1,3 +1,8 @@
+---
+title: Cloud Platforms for AI
+description: Explore leading cloud platforms for AI, including AWS, Azure, Google Cloud, and IBM Watson. Learn about key capabilities, architectures, costs, and interoperability for building, deploying, and scaling AI solutions.
+author: Inference Institute
+---
 # Cloud Platforms for AI  
 
 Cloud platforms have become indispensable for building, deploying, and scaling AI solutions. A **Cloud AI Platform** integrates various technologies and services to facilitate AI workflows, including data storage, compute resources, model development, deployment, and monitoring. This section provides an overview of leading cloud providers for AI and examines their capabilities, architectures, costs, and interoperability across different cloud and hybrid environments.

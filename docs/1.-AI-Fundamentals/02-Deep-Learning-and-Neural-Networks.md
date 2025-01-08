@@ -1,3 +1,8 @@
+---
+title: Deep Learning and Neural Networks
+description: Explore the architecture, concepts, and applications of deep learning and neural networks, from basic perceptrons to advanced transformer models.
+author: Inference Institute
+---
 # Deep Learning and Neural Networks
 
 ## Introduction

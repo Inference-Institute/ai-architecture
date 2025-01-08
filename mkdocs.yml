@@ -1,5 +1,6 @@
 site_name: AI Architecture
 site_url: https://architecture.inference.institute
+site_description: AI Architecture is a collection of resources for designing, building, and deploying AI systems.
 copyright: AI Architecture | Infernce Institute
 repo_name: inference-institute/ai-architecture
 repo_url: https://github.com/inference-institute/ai-architecture
@@ -36,6 +37,7 @@ theme:
         name: Switch to light mode
 
 markdown_extensions: 
+  - meta
   - attr_list
   - pymdownx.arithmatex:
       generic: true
@@ -57,6 +59,8 @@ plugins:
 
 
 extra:
+  manifest: manifest.webmanifest
+
   analytics:
     provider: google
     property: G-JF4QZPDSXY

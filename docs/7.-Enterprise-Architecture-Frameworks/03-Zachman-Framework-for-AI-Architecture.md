@@ -1,3 +1,8 @@
+---
+title: Zachman Framework for AI Architecture
+description: Learn how to apply the Zachman Framework to design and organize AI architecture. Explore the six perspectives and aspects of the Zachman Framework for AI systems.
+author: Inference Institute
+---
 # Zachman Framework for AI Architecture
 
 The **Zachman Framework** is a foundational tool for designing complex systems, offering a structured way to organize and analyze architectural components. It provides a holistic perspective by categorizing information into six fundamental questions (**What**, **How**, **Where**, **Who**, **When**, and **Why**) across six perspectives or roles (e.g., Executive, Business Management, Architect).

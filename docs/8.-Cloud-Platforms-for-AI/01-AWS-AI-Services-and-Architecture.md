@@ -1,3 +1,8 @@
+---
+title: AWS AI Services and Architecture
+description: Explore the suite of AI services offered by Amazon Web Services (AWS) and learn how to architect end-to-end AI solutions on the AWS cloud platform.
+author: Inference Institute
+---
 # AWS AI Services and Architecture
 
 ## Introduction

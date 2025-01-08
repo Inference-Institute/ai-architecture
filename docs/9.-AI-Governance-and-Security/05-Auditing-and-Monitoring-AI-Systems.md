@@ -1,3 +1,8 @@
+---
+title: Auditing and Monitoring AI Systems
+description: Learn about the importance of auditing and monitoring AI systems, key metrics for monitoring, auditing workflows, and best practices.
+author: Inference Institute
+---
 # Auditing and Monitoring AI Systems  
 
 ## Introduction  

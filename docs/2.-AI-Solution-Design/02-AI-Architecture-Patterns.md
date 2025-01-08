@@ -1,3 +1,8 @@
+---
+title: AI Architecture Patterns
+description: Explore different AI architecture patterns and learn when to use them to build scalable, robust, and maintainable AI solutions.
+author: Inference Institute
+---
 # AI Architecture Patterns
 
 In this section, we explore different **AI architecture patterns** that can be leveraged to build scalable, robust, and maintainable AI solutions. Selecting the right architecture pattern is a critical decision that directly impacts your system's performance, cost, and flexibility. This section will provide an overview of common architecture patterns and when to use them.

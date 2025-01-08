@@ -1,3 +1,8 @@
+---
+title: Fairness and Bias in AI
+description: Learn about common sources of bias in AI systems and strategies for detecting and mitigating bias to ensure fair outcomes.
+author: Inference Institute
+---
 # Fairness and Bias in AI
 
 The **Fairness and Bias in AI** page addresses one of the most critical aspects of ethical AI design: ensuring that AI systems produce equitable outcomes across diverse user groups. Bias in AI can arise from various sources, including data collection, model training, and deployment contexts, leading to unfair decisions that disproportionately impact specific groups. This section focuses on understanding, detecting, and mitigating bias to promote fairness in AI systems.

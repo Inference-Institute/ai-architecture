@@ -1,3 +1,8 @@
+---
+title: Containerization and Orchestration
+description: Explore the essential concepts of deploying AI models using containers and orchestration platforms like Docker and Kubernetes.
+author: Inference Institute
+---
 # Containerization and Orchestration
 
 The **Containerization and Orchestration** section explores the essential concepts of deploying AI models using containers and orchestration platforms like Docker and Kubernetes. Containerization allows AI applications to be packaged with all their dependencies, ensuring consistency across environments. Orchestration platforms, in turn, manage these containers, providing scalability, reliability, and ease of maintenance.

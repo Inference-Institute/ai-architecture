@@ -1,3 +1,8 @@
+---
+title: Data Quality and Preprocessing
+description: Learn about the key techniques, best practices, and tools for data quality and preprocessing in AI architectures.
+author: Inference Institute
+---
 # Data Quality and Preprocessing
 
 High-quality data is the bedrock of successful AI projects. Poor data quality can lead to inaccurate model predictions, biased outcomes, and unreliable insights. Preprocessing ensures that data is clean, consistent, and ready for analysis, helping to maximize the performance of AI models. This section covers the key techniques, best practices, and tools for data quality and preprocessing in AI architectures.

@@ -1,3 +1,8 @@
+---
+title: Problem Framing and Requirements Analysis
+description: Learn how to properly define the problem, gather requirements, and set the foundation for a successful AI project.
+author: Inference Institute
+---
 # Problem Framing and Requirements Analysis
 
 In this section, we will dive into **Problem Framing and Requirements Analysis**, the crucial first step in designing an effective AI solution. This stage sets the foundation for the entire project, ensuring that the problem is well-understood, the requirements are clear, and the solution is aligned with business objectives.

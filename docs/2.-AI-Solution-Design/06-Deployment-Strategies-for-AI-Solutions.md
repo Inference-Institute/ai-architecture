@@ -1,3 +1,8 @@
+---
+title: Deployment Strategies for AI Solutions
+description: Explore the best practices and strategies for deploying AI models, focusing on various deployment paradigms, infrastructure options, deployment strategies, monitoring, and maintenance.
+author: Inference Institute
+---
 # Deployment Strategies for AI Solutions
 
 Deploying AI solutions into production is a critical step in the AI lifecycle. An effective deployment strategy ensures that the model performs well in real-world scenarios, scales to meet user demand, and can be easily maintained and monitored. This section explores the best practices and strategies for deploying AI models, focusing on various deployment paradigms, infrastructure options, deployment strategies, monitoring, and maintenance.

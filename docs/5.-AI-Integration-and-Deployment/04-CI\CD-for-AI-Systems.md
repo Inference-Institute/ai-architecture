@@ -1,3 +1,8 @@
+---
+title: CI/CD for AI Systems
+description: Learn about Continuous Integration (CI) and Continuous Deployment (CD) practices tailored for AI workflows, including data validation, model versioning, and automated testing.
+author: Inference Institute
+---
 # CI/CD for AI Systems
 
 The **CI/CD for AI Systems** section focuses on Continuous Integration (CI) and Continuous Deployment (CD) practices tailored for AI workflows. Implementing CI/CD for AI projects helps automate the testing, integration, and deployment of AI models, reducing the time from development to production while ensuring high-quality, reproducible results. This approach enhances the agility and reliability of AI solutions, making it easier to adapt to changing data and evolving business requirements.

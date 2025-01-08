@@ -1,3 +1,8 @@
+---
+title: AI Solution Evaluation Metrics
+description: Explore how to effectively evaluate the performance of your AI solutions using a comprehensive set of metrics, including accuracy, performance, business impact, and user experience.
+author: Inference Institute
+---
 # AI Solution Evaluation Metrics
 
 In this section, we will explore how to effectively evaluate the performance of your AI solutions using a comprehensive set of metrics. Proper evaluation is crucial to ensure that your AI models are not only accurate but also aligned with business goals and user expectations.

@@ -1,3 +1,8 @@
+---
+title: Transparency and Explainability in AI
+description: Learn about techniques, best practices, and tools for achieving transparency and explainability in AI systems, ensuring decisions made by AI are interpretable and accountable.
+author: Inference Institute
+---
 # Transparency and Explainability in AI
 
 Transparency and explainability are foundational pillars of ethical AI design. They involve making AI systems understandable to users, stakeholders, and regulators, ensuring decisions made by AI are interpretable and accountable. Transparency builds trust, while explainability helps address concerns over fairness, reliability, and usability.

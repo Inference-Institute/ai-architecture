@@ -1,3 +1,8 @@
+---
+title: AI Solution Design
+description: Learn how to design effective, scalable, and cost-efficient AI solutions, covering problem framing, architecture patterns, scalability, cost optimization, and evaluation metrics.
+author: Inference Institute
+---
 # AI Solution Design
 
 Welcome to the AI Solution Design section of our AI Solution Architect handbook. This section focuses on the practical aspects of designing and implementing AI solutions that are effective, scalable, and cost-efficient.

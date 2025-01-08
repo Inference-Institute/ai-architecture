@@ -1,3 +1,8 @@
+---
+title: Model Development Workflows
+description: Learn about best practices for establishing AI model development workflows, including data preparation, exploratory data analysis, prototyping, and iterative experimentation.
+author: Inference Institute
+---
 # Model Development Workflows
 
 Effective model development workflows are crucial for building robust AI systems. A well-structured workflow ensures that data scientists and engineers can collaborate seamlessly, track progress, and iterate on models efficiently. This section covers best practices for establishing an AI model development workflow, including data preparation, exploratory data analysis (EDA), prototyping, and iterative experimentation.

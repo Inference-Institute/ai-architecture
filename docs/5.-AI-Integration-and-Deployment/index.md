@@ -1,3 +1,8 @@
+---
+title: AI Integration and Deployment
+description: Learn about the practical aspects of integrating AI models into production systems, with an emphasis on building scalable, maintainable, and efficient solutions.
+author: Inference Institute
+---
 # AI Integration and Deployment
 
 Welcome to the **AI Integration and Deployment** section of the AI Architect Handbook. This section focuses on the practical aspects of integrating AI models into production systems, with an emphasis on building scalable, maintainable, and efficient solutions. Successful integration involves key components such as API design, microservices architecture, containerization, automated CI/CD pipelines, and monitoring frameworks.

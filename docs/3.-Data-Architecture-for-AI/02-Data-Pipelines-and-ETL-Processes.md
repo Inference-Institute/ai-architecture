@@ -1,3 +1,8 @@
+---
+title: Data Pipelines and ETL Processes
+description: Learn about the critical aspects of data pipelines and ETL processes in AI systems, including best practices, design patterns, and real-world examples.
+author: Inference Institute
+---
 # Data Pipelines and ETL Processes
 
 Data pipelines and ETL (Extract, Transform, Load) processes are critical elements in the data architecture of AI solutions. They enable the movement, transformation, and management of data across various systems, ensuring that high-quality, clean, and enriched data is made available for analytics and AI model training. In this section, we will provide a comprehensive overview of data pipelines, ETL processes, and modern data processing frameworks, including best practices, design patterns, and real-world examples.

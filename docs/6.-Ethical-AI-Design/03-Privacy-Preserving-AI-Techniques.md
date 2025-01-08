@@ -1,3 +1,8 @@
+---
+title: Privacy Preserving AI Techniques
+description: Explore methodologies and tools that protect user privacy while enabling powerful AI capabilities. Learn about differential privacy, federated learning, homomorphic encryption, and privacy by design principles.
+author: Inference Institute
+---
 # Privacy-Preserving AI Techniques
 
 The **Privacy-Preserving AI Techniques** section focuses on methodologies and tools that protect user privacy while enabling powerful AI capabilities. As AI systems process vast amounts of sensitive data, safeguarding privacy is essential for maintaining trust, complying with regulations, and minimizing risks of data misuse.

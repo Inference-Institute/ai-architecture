@@ -1,3 +1,8 @@
+---
+title: ITIL for AI Service Management
+description: Explore how the ITIL framework can be adapted to manage AI services effectively. Learn about the application of ITIL principles to the lifecycle of AI systems.
+author: Inference Institute
+---
 # ITIL for AI Service Management  
 
 The **ITIL (Information Technology Infrastructure Library)** framework provides a structured approach to managing IT services, ensuring alignment with business goals, efficiency, and continuous improvement. Applying ITIL principles to **AI Service Management** adapts these best practices to the unique lifecycle and operational needs of AI systems.

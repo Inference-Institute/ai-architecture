@@ -1,3 +1,8 @@
+---
+title: Google Cloud AI Solutions
+description: Explore Google Cloud's AI capabilities and learn how to build end-to-end AI platforms on Google Cloud. Discover best practices for deploying, monitoring, and securing AI solutions.
+author: Inference Institute
+---
 # Google Cloud AI Solutions  
 
 ## Introduction  

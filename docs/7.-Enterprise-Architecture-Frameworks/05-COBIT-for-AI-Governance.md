@@ -1,3 +1,8 @@
+---
+title: COBIT for AI Governance
+description: Explore how the COBIT framework can be adapted to establish robust governance for AI systems, ensuring accountability, compliance, and strategic alignment.
+author: Inference Institute
+---
 # COBIT for AI Governance  
 
 The **COBIT (Control Objectives for Information and Related Technologies)** framework provides a comprehensive approach to governance and management of IT systems. Applying COBIT to **AI Governance** ensures that AI initiatives align with organizational goals, mitigate risks, and deliver measurable value.  

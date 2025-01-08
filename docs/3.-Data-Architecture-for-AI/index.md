@@ -1,3 +1,8 @@
+---
+title: Data Architecture for AI
+description: Learn about the critical aspects of designing and implementing robust data architectures to support AI systems.
+author: Inference Institute
+---
 # Data Architecture for AI
 
 Welcome to the Data Architecture for AI section of our AI Solution Architect handbook. This section focuses on the critical aspects of designing and implementing robust data architectures to support AI systems.
